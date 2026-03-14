@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Matchy 💬</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Matchy 💬</h1>
+
+<div id="setup">
+  <label>Your Gender:</label>
+  <select id="gender">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+  <label>Match With:</label>
+  <select id="match">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+    <option value="both">Both</option>
+  </select>
+
+  <button onclick="start()">Start Chat</button>
+</div>
+
+<div id="chat" style="display:none">
+  <div id="messages"></div>
+  <input id="msg" placeholder="Type a message">
+  <button onclick="send()">Send</button>
+  <button onclick="skip()">Next Stranger</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
