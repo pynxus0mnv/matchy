@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#messages {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #444;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+}
